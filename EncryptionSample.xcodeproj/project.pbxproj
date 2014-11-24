@@ -14,6 +14,11 @@
 		C519CBB91A23BF11002BD51A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C519CBB81A23BF11002BD51A /* Images.xcassets */; };
 		C519CBBC1A23BF11002BD51A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C519CBBA1A23BF11002BD51A /* LaunchScreen.xib */; };
 		C519CBC81A23BF11002BD51A /* EncryptionSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C519CBC71A23BF11002BD51A /* EncryptionSampleTests.m */; };
+		C519CBD81A23C219002BD51A /* PCCryptoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C519CBD31A23C219002BD51A /* PCCryptoManager.m */; };
+		C519CBD91A23C219002BD51A /* PCEncryptionFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C519CBD51A23C219002BD51A /* PCEncryptionFileManager.m */; };
+		C519CBDA1A23C219002BD51A /* PCPinProtectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C519CBD71A23C219002BD51A /* PCPinProtectionManager.m */; };
+		C519CBDF1A23C223002BD51A /* EncyptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C519CBDC1A23C223002BD51A /* EncyptViewController.m */; };
+		C519CBE01A23C223002BD51A /* DecryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C519CBDE1A23C223002BD51A /* DecryptViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		C519CBC11A23BF11002BD51A /* EncryptionSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptionSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C519CBC61A23BF11002BD51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C519CBC71A23BF11002BD51A /* EncryptionSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptionSampleTests.m; sourceTree = "<group>"; };
+		C519CBD21A23C219002BD51A /* PCCryptoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCryptoManager.h; sourceTree = "<group>"; };
+		C519CBD31A23C219002BD51A /* PCCryptoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCryptoManager.m; sourceTree = "<group>"; };
+		C519CBD41A23C219002BD51A /* PCEncryptionFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEncryptionFileManager.h; sourceTree = "<group>"; };
+		C519CBD51A23C219002BD51A /* PCEncryptionFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEncryptionFileManager.m; sourceTree = "<group>"; };
+		C519CBD61A23C219002BD51A /* PCPinProtectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPinProtectionManager.h; sourceTree = "<group>"; };
+		C519CBD71A23C219002BD51A /* PCPinProtectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPinProtectionManager.m; sourceTree = "<group>"; };
+		C519CBDB1A23C223002BD51A /* EncyptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncyptViewController.h; sourceTree = "<group>"; };
+		C519CBDC1A23C223002BD51A /* EncyptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncyptViewController.m; sourceTree = "<group>"; };
+		C519CBDD1A23C223002BD51A /* DecryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecryptViewController.h; sourceTree = "<group>"; };
+		C519CBDE1A23C223002BD51A /* DecryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecryptViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +96,13 @@
 		C519CBAA1A23BF11002BD51A /* EncryptionSample */ = {
 			isa = PBXGroup;
 			children = (
+				C519CBD11A23C20F002BD51A /* ENcryption */,
 				C519CBAF1A23BF11002BD51A /* AppDelegate.h */,
 				C519CBB01A23BF11002BD51A /* AppDelegate.m */,
+				C519CBDB1A23C223002BD51A /* EncyptViewController.h */,
+				C519CBDC1A23C223002BD51A /* EncyptViewController.m */,
+				C519CBDD1A23C223002BD51A /* DecryptViewController.h */,
+				C519CBDE1A23C223002BD51A /* DecryptViewController.m */,
 				C519CBB21A23BF11002BD51A /* ViewController.h */,
 				C519CBB31A23BF11002BD51A /* ViewController.m */,
 				C519CBB51A23BF11002BD51A /* Main.storyboard */,
@@ -117,6 +137,19 @@
 				C519CBC61A23BF11002BD51A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C519CBD11A23C20F002BD51A /* ENcryption */ = {
+			isa = PBXGroup;
+			children = (
+				C519CBD21A23C219002BD51A /* PCCryptoManager.h */,
+				C519CBD31A23C219002BD51A /* PCCryptoManager.m */,
+				C519CBD41A23C219002BD51A /* PCEncryptionFileManager.h */,
+				C519CBD51A23C219002BD51A /* PCEncryptionFileManager.m */,
+				C519CBD61A23C219002BD51A /* PCPinProtectionManager.h */,
+				C519CBD71A23C219002BD51A /* PCPinProtectionManager.m */,
+			);
+			name = ENcryption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +254,12 @@
 			files = (
 				C519CBB41A23BF11002BD51A /* ViewController.m in Sources */,
 				C519CBB11A23BF11002BD51A /* AppDelegate.m in Sources */,
+				C519CBD91A23C219002BD51A /* PCEncryptionFileManager.m in Sources */,
+				C519CBDF1A23C223002BD51A /* EncyptViewController.m in Sources */,
+				C519CBE01A23C223002BD51A /* DecryptViewController.m in Sources */,
 				C519CBAE1A23BF11002BD51A /* main.m in Sources */,
+				C519CBD81A23C219002BD51A /* PCCryptoManager.m in Sources */,
+				C519CBDA1A23C219002BD51A /* PCPinProtectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +452,7 @@
 				C519CBCD1A23BF11002BD51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C519CBCE1A23BF11002BD51A /* Build configuration list for PBXNativeTarget "EncryptionSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +461,7 @@
 				C519CBD01A23BF11002BD51A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
