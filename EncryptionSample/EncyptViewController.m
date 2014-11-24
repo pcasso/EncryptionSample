@@ -16,7 +16,8 @@
 
 
 - (void)viewDidLoad {
-	[super viewDidLoad];
+	
+    [super viewDidLoad];
 
 	self.textView.editable = NO;
 	self.textView.text = @"";
@@ -50,6 +51,7 @@
 }
 
 - (void)viewDidUnload {
+    
 	[super viewDidUnload];
 }
 

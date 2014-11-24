@@ -13,15 +13,16 @@
 
 @implementation DecryptViewController
 - (void)viewDidLoad {
+    
 	[super viewDidLoad];
-	self.textView.text = @"";
+	
+    self.textView.text = @"";
 	self.textView.editable = NO;
 	self.decryptButton.enabled = YES;
     
 }
 
 - (IBAction)decryptPin:(id)sender {
-   
    
     NSString *pinCode=@"1234";
     
