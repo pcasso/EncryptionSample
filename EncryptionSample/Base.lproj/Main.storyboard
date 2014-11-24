@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Encrypt-->
         <scene sceneID="H4y-YT-FhQ">
             <objects>
                 <viewController id="TKT-JW-09N" customClass="EncyptViewController" sceneMemberID="viewController">
@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbx-Ns-JUo">
-                                <rect key="frame" x="134" y="327" width="53" height="30"/>
-                                <state key="normal" title="Encrypt">
+                                <rect key="frame" x="134" y="327" width="81" height="30"/>
+                                <state key="normal" title="Encrypt File">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -43,7 +43,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="ffc-gO-84x"/>
+                    <tabBarItem key="tabBarItem" title="Encrypt" id="ffc-gO-84x"/>
                     <connections>
                         <outlet property="textView" destination="eAp-Hf-qbb" id="k2c-Wt-85d"/>
                     </connections>
@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="322" y="-303"/>
         </scene>
-        <!--Second-->
+        <!--Decrypt-->
         <scene sceneID="qfh-Qd-AQF">
             <objects>
                 <viewController id="cgM-uA-1RB" customClass="DecryptViewController" sceneMemberID="viewController">
@@ -64,43 +64,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8y-FV-e1C">
-                                <rect key="frame" x="30" y="100" width="300" height="200"/>
-                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7V-NZ-vsL">
-                                <rect key="frame" x="30" y="403" width="37" height="30"/>
-                                <state key="normal" title="Clear">
+                                <rect key="frame" x="34" y="460" width="58" height="30"/>
+                                <state key="normal" title="Clear All">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clear:" destination="cgM-uA-1RB" eventType="touchUpInside" id="hgU-l3-lkE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-4v-3hx">
-                                <rect key="frame" x="137" y="403" width="54" height="30"/>
-                                <state key="normal" title="Decrypt">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="decrypt:" destination="cgM-uA-1RB" eventType="touchUpInside" id="5nq-5M-76j"/>
-                                </connections>
-                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p8y-FV-e1C">
+                                <rect key="frame" x="30" y="100" width="300" height="200"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfc-Vq-8Th">
-                                <rect key="frame" x="34" y="344" width="30" height="30"/>
-                                <state key="normal" title="Pin">
+                                <rect key="frame" x="34" y="344" width="81" height="30"/>
+                                <state key="normal" title="Pin Validate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="decryptPin:" destination="cgM-uA-1RB" eventType="touchUpInside" id="HG3-7S-mFj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-4v-3hx">
+                                <rect key="frame" x="32" y="399" width="83" height="30"/>
+                                <state key="normal" title="Decrypt File">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="decrypt:" destination="cgM-uA-1RB" eventType="touchUpInside" id="5nq-5M-76j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Rzx-6s-Enl"/>
+                    <tabBarItem key="tabBarItem" title="Decrypt" id="Rzx-6s-Enl"/>
                     <connections>
                         <outlet property="textView" destination="p8y-FV-e1C" id="nWP-uS-OiA"/>
                     </connections>
@@ -129,8 +129,4 @@
             <point key="canvasLocation" x="-402" y="-96"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-    </resources>
 </document>
